@@ -14,7 +14,7 @@
 
 <p>This Privacy Policy explains what information the DutyPal mobile application ("DutyPal", "the App") handles, why, where it is stored, and what choices you have.</p>
 
-<p><strong>In short:</strong> DutyPal has no user accounts and no servers of its own. Your logs, profile and location history are stored on your phone. We do not sell your data, we do not use advertising, and the App contains no analytics or tracking SDKs.</p>
+<p><strong>In short:</strong> DutyPal has no user accounts and no servers of its own. Your logs, profile and location history are stored on your phone. We do not sell your data and we do not use advertising. To find bugs and improve the App, we collect usage statistics and crash reports through Google Firebase, tied to a random install identifier and not to your name - never your logs, name, license number or locations.</p>
 
 <h2>1. Who is responsible</h2>
 <p>
@@ -51,10 +51,21 @@ Contact: <a href="mailto:dutypal.support@gmail.com">dutypal.support@gmail.com</a
 <li><strong>Android geocoding</strong> - turning coordinates into a place name (and a typed address into coordinates). The coordinates or address being looked up are sent to the geocoding provider on your device, usually Google.</li>
 <li><strong>Google Maps</strong> - showing your recorded routes on a map; map tiles are downloaded from Google.</li>
 <li><strong>Google Play Billing</strong> - purchasing and verifying subscriptions. Payments are handled entirely by Google Play; we never see your payment details.</li>
+<li><strong>Google Firebase Analytics and Crashlytics</strong> - see section 6.</li>
 <li><strong>Android backup</strong> - if Backup is enabled in your device's Android settings, Android may include App data in your device backup stored in your Google account. This is controlled by your device settings, not by DutyPal.</li>
 </ul>
 
-<h2>6. Sharing and exports</h2>
+<h2>6. Usage statistics and crash reports</h2>
+<p>DutyPal uses Google Firebase Analytics and Firebase Crashlytics, provided by Google LLC, to understand how the App is used and to find and fix crashes. They collect:</p>
+<ul>
+<li><strong>App interactions</strong> - which screens are opened and actions such as changing a duty status, changing the detection mode, certifying a day, opening the subscription screen and subscription purchases. Only the kind of action is recorded (for example "driving") - not where it happened, and not the content of your log.</li>
+<li><strong>Crash logs and diagnostics</strong> - the technical state of the App at a crash or error: device model, Android version, App version, memory and the code location of the error.</li>
+<li><strong>Identifiers</strong> - a random Firebase installation identifier used to count unique installs and group reports. It is reset when you reinstall the App or clear its data.</li>
+</ul>
+<p>DutyPal does not send your name, driver license or USDOT numbers, carrier details, records of duty status, GPS positions or place names to Firebase. It does not set a user ID and does not collect the Android advertising ID. Firebase may infer an approximate region (country or state) from the network address of the connection.</p>
+<p>The data is processed by Google on our behalf under the <a href="https://firebase.google.com/support/privacy">Firebase privacy and security terms</a> and kept only for the retention periods set in Firebase (crash reports for 90 days). It is not used for advertising and not sold.</p>
+
+<h2>7. Sharing and exports</h2>
 <p>DutyPal does not share your information with anyone on its own. Data leaves your device only when <strong>you</strong> choose to send it, for example:</p>
 <ul>
 <li>showing or sending your logs to an enforcement officer during a roadside inspection,</li>
@@ -63,37 +74,37 @@ Contact: <a href="mailto:dutypal.support@gmail.com">dutypal.support@gmail.com</a
 </ul>
 <p>Once shared, the copy is handled by the recipient and the app you used to send it.</p>
 
-<h2>7. Backup files and encryption</h2>
+<h2>8. Backup files and encryption</h2>
 <p>You can save a backup of your data to a file in a location you choose, and restore it later. Backup files are encrypted with a password you set. We do not know this password and cannot recover it; if it is lost, the backup cannot be restored.</p>
 
-<h2>8. Retention and deletion</h2>
+<h2>9. Retention and deletion</h2>
 <p>Data stays on your device until you delete it. You can delete entries in the App, clear the App's data in Android settings, or uninstall the App, which removes all data stored by it. Backup files and exports you created remain wherever you saved or sent them.</p>
 <p>Federal rules may require drivers and carriers to retain records of duty status for a period of time. Keeping the records you are required to keep is your responsibility.</p>
-<p>Because we do not hold your data on any server, there is no account or server-side data for us to delete. If you emailed us, you can ask us to delete that correspondence.</p>
+<p>Because we do not hold your logs on any server, there is no account or server-side copy of them for us to delete. Usage statistics and crash reports are not linked to your name and expire as described in section 6; you can also ask us to delete them, or correspondence you sent us, by email.</p>
 
-<h2>9. Your privacy rights</h2>
+<h2>10. Your privacy rights</h2>
 <p>Depending on where you live (for example California under the CCPA/CPRA, other US states with privacy laws, or the European Union under the GDPR), you may have rights to know, access, correct or delete personal information and to opt out of its sale or sharing. DutyPal does not sell or share personal information for cross-context behavioral advertising. Since your data is stored on your device, you can access, correct and delete it directly in the App. For any request or question, contact us at the address above.</p>
 
-<h2>10. Security</h2>
+<h2>11. Security</h2>
 <p>Your data is protected by the security of your device and by Android's app sandbox. We recommend using a screen lock on your phone. Backup files are encrypted with your password.</p>
 
-<h2>11. Children</h2>
+<h2>12. Children</h2>
 <p>DutyPal is intended for adult commercial drivers. It is not directed to children under 13, and we do not knowingly collect information from children.</p>
 
-<h2>12. Permissions used</h2>
+<h2>13. Permissions used</h2>
 <ul>
 <li><strong>Location (precise and approximate)</strong> and <strong>background location</strong> - automatic drive detection and route recording.</li>
 <li><strong>Physical activity</strong> - detecting when you are in a moving vehicle.</li>
 <li><strong>Foreground service</strong> - keeping detection running while you drive, with a visible notification.</li>
 <li><strong>Notifications</strong> - status, warnings and reminders about your available hours.</li>
 <li><strong>Exact alarms</strong> and <strong>run at startup</strong> - timely warnings and restoring detection after the phone restarts.</li>
-<li><strong>Internet</strong> - maps, place names and subscriptions.</li>
+<li><strong>Internet</strong> - maps, place names, subscriptions, usage statistics and crash reports.</li>
 </ul>
 
-<h2>13. Changes to this policy</h2>
+<h2>14. Changes to this policy</h2>
 <p>We may update this Privacy Policy. The current version is always available on this page, with the date of the last update at the top.</p>
 
-<h2>14. Contact</h2>
+<h2>15. Contact</h2>
 <p><a href="mailto:dutypal.support@gmail.com">dutypal.support@gmail.com</a></p>
 </main>
 </body>
