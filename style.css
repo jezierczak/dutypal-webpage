@@ -9,3 +9,5 @@ a{color:var(--link)}
 .muted{color:var(--muted)}
 ul{padding-left:1.3em}
 footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.warning{background:#fff4e5;border:1px solid #ffd59e;border-radius:8px;padding:14px 16px;margin:20px 0}
+@media (prefers-color-scheme:dark){.warning{background:#3a2a12;border-color:#7a5520}}
